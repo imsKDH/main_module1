@@ -26,6 +26,8 @@ jobs:
     # Update references
     - name: Git Sumbodule Update
       run: |
+        git config --global user.email "dhkim@imsmobility.co.kr"
+        git config --global user.name "imsKDH""
         git pull --recurse-submodules
         git submodule update --remote --recursive
 

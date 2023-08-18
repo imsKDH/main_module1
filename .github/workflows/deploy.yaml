@@ -1,4 +1,4 @@
-ame: 'Submodule Notify Parent'
+name: 'Submodule Notify Parent'
 
 on:
   push:

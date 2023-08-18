@@ -20,7 +20,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        # token: ${{ secrets.CI_TOKEN }}
+        token: ${{ secrets.CI_TOKEN }}
         submodules: true
 
     # Update references
@@ -40,5 +40,3 @@ jobs:
         git commit -m "update openapi.json"
         git push --set-upstream origin main
       working-directory: ./sub_module
-      with:
-        token: ${{ secrets.CI_TOKEN }}

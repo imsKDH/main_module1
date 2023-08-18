@@ -30,6 +30,8 @@ jobs:
         git config --global user.name "imsKDH"
         git pull --recurse-submodules
         git submodule update --remote --recursive
+        cd ./sub_module
+        git push origin HEAD:main
         
 
     # upload submodule

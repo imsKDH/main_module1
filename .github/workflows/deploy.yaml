@@ -35,8 +35,8 @@ jobs:
     # upload submodule
     - name: Git Sumbodule upload file
       run: |
-        cp ../openapi.json a/.
+        cp openapi.json sub_module/.
+        cd sub_module
         git add .
         git commit -m "update openapi.json"
         git push origin main
-      working-directory: ./sub_module

@@ -40,3 +40,5 @@ jobs:
         git commit -m "update openapi.json"
         git push --set-upstream origin main
       working-directory: ./sub_module
+      with:
+        token: ${{ secrets.CI_TOKEN }}

@@ -38,5 +38,5 @@ jobs:
         cp ../openapi.json a/.
         git add .
         git commit -m "update openapi.json"
-        git push --set-upstream origin main
+        git push origin main
       working-directory: ./sub_module

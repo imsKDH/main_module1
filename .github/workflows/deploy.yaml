@@ -37,6 +37,6 @@ jobs:
       run: |
         cp ../openapi.json a/.
         git add .
-	git commit -m "update openapi.json"
-	git push
+        git commit -m "update openapi.json"
+        git push
       working-directory:./sub_module
